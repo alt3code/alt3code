@@ -39,6 +39,13 @@
     padding: 20px;
 }
 
+@media screen and (max-width: 600px) {
+.rightblock {
+     width: 100% !important;
+     float: left !important;
+}
+}
+
 a.menuitem {
     text-decoration: none;
     color: inherit;
@@ -50,10 +57,15 @@ a.menuitem {
     float: right;
 }
 
+.topicsinclude {
+    line-height: 2.7;
+}
+
 .logo {
-    height: 100px;
+    height: 120px;
     background-size: fit;
-    width: 400px;
+    width: 30%;
+    min-width: 350px;
     background-size: contain !important;
     background-repeat: no-repeat;
     background-position: center;
