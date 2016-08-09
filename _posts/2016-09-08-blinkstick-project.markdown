@@ -6,6 +6,5 @@ author: Harry
 ---
 
 {% highlight python %}
-from tkinter import *
-print("Hi")
+If this works then I am an absolute machine
 {% endhighlight %}
