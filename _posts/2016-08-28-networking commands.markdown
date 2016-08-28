@@ -21,7 +21,7 @@ Run a HTTP server for testing HTML files:
 {% highlight git bash %}
 python3 -m http.server 8000
 {% endhighlight %}
-Note:- type in your web browser: "http://localhost:8000" to view. 8000 is the port number, you can use 80 if you wish.
+Note:- type in your web browser: "http://localhost:8000" to view. 8000 is the port number, you can use port 80 if you wish.
 
 Test your network connectivity:
 {% highlight git bash %}
