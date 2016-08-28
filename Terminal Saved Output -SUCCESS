@@ -1,0 +1,573 @@
+Last login: Thu Jul 28 16:13:02 on ttys000
+Harrys-MacBook:~ HarryBaines$ jekyll -v
+jekyll 3.2.0
+Harrys-MacBook:~ HarryBaines$ cd /Users/HarryBaines/Desktop/Harry-Site 
+Harrys-MacBook:Harry-Site HarryBaines$ jekyll build
+/usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+	from /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /usr/local/lib/ruby/gems/2.3.0/gems/jekyll-3.2.0/lib/jekyll/plugin_manager.rb:34:in `require_from_bundler'
+	from /usr/local/lib/ruby/gems/2.3.0/gems/jekyll-3.2.0/exe/jekyll:9:in `<top (required)>'
+	from /usr/local/bin/jekyll:23:in `load'
+	from /usr/local/bin/jekyll:23:in `<main>'
+Harrys-MacBook:Harry-Site HarryBaines$ jekyll -v
+/usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+	from /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /usr/local/lib/ruby/gems/2.3.0/gems/jekyll-3.2.0/lib/jekyll/plugin_manager.rb:34:in `require_from_bundler'
+	from /usr/local/lib/ruby/gems/2.3.0/gems/jekyll-3.2.0/exe/jekyll:9:in `<top (required)>'
+	from /usr/local/bin/jekyll:23:in `load'
+	from /usr/local/bin/jekyll:23:in `<main>'
+Harrys-MacBook:Harry-Site HarryBaines$ sudo jekyll build
+Password:
+/usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+	from /usr/local/Cellar/ruby/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /usr/local/lib/ruby/gems/2.3.0/gems/jekyll-3.2.0/lib/jekyll/plugin_manager.rb:34:in `require_from_bundler'
+	from /usr/local/lib/ruby/gems/2.3.0/gems/jekyll-3.2.0/exe/jekyll:9:in `<top (required)>'
+	from /usr/local/bin/jekyll:23:in `load'
+	from /usr/local/bin/jekyll:23:in `<main>'
+Harrys-MacBook:Harry-Site HarryBaines$ sudo jekyll build
+sudo: unable to execute /usr/local/bin/jekyll: No such file or directory
+Harrys-MacBook:Harry-Site HarryBaines$ sudo jekyll build
+sudo: unable to execute /usr/local/bin/jekyll: No such file or directory
+Harrys-MacBook:Harry-Site HarryBaines$ sudo jekyll build
+sudo: unable to execute /usr/local/bin/jekyll: No such file or directory
+Harrys-MacBook:Harry-Site HarryBaines$ sudo gem install jekyll -n/usr/local/bin
+Successfully installed jekyll-3.2.0
+Parsing documentation for jekyll-3.2.0
+1 gem installed
+Harrys-MacBook:Harry-Site HarryBaines$ jekyll -v
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Library/Ruby/Gems/2.0.0/gems/jekyll-3.2.0/lib/jekyll/plugin_manager.rb:34:in `require_from_bundler'
+	from /Library/Ruby/Gems/2.0.0/gems/jekyll-3.2.0/exe/jekyll:9:in `<top (required)>'
+	from /usr/local/bin/jekyll:23:in `load'
+	from /usr/local/bin/jekyll:23:in `<main>'
+Harrys-MacBook:Harry-Site HarryBaines$ sudo nano /.bash_profile
+^CHarrys-MacBook:Harry-Site HarryBaines$ echo "$PATH"
+/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+Harrys-MacBook:Harry-Site HarryBaines$ gem uninstall jekyll
+Remove executables:
+	jekyll
+
+in addition to the gem? [Yn]  Y
+Removing jekyll
+ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory.
+Harrys-MacBook:Harry-Site HarryBaines$ sudo gem uninstall jekyll
+Remove executables:
+	jekyll
+
+in addition to the gem? [Yn]  Y
+Removing jekyll
+Successfully uninstalled jekyll-3.2.0
+Harrys-MacBook:Harry-Site HarryBaines$ find / -name jekyll (to delete if there is any leftovers somewhere )
+-bash: syntax error near unexpected token `('
+Harrys-MacBook:Harry-Site HarryBaines$ find / -name jekyll
+find: /.DocumentRevisions-V100: Permission denied
+find: /.fseventsd: Permission denied
+find: /.Spotlight-V100: Permission denied
+find: /.Trashes: Permission denied
+^[[A^[[D^[[A^X^C
+Harrys-MacBook:Harry-Site HarryBaines$ sudo find / -name jekyll
+find: /dev/fd/3: Not a directory
+find: /dev/fd/4: Not a directory
+/Library/Ruby/Gems/2.0.0/gems/jekyll-sass-converter-1.4.0/lib/jekyll
+/Library/Ruby/Gems/2.0.0/gems/jekyll-watch-1.5.0/lib/jekyll
+/opt/local/var/macports/sources/rsync.macports.org/release/tarballs/ports/lang/jekyll
+/Users/HarryBaines/.Trash/jekyll
+/Users/HarryBaines/.Trash/ruby/2.2.0/gems/jekyll-3.2.0/exe/jekyll
+/Users/HarryBaines/.Trash/ruby/2.2.0/gems/jekyll-3.2.0/lib/jekyll
+/Users/HarryBaines/.Trash/ruby 16.32.06/gems/2.2.0/doc/jekyll-3.2.0/ri/lib/jekyll
+/Users/HarryBaines/.Trash/ruby 16.32.06/gems/2.2.0/gems/jekyll-3.2.0/exe/jekyll
+/Users/HarryBaines/.Trash/ruby 16.32.06/gems/2.2.0/gems/jekyll-3.2.0/lib/jekyll
+/Users/HarryBaines/.Trash/ruby 16.32.06/gems/2.2.0/gems/jekyll-sass-converter-1.4.0/lib/jekyll
+/Users/HarryBaines/.Trash/ruby 16.32.06/gems/2.2.0/gems/jekyll-watch-1.5.0/lib/jekyll
+/Users/HarryBaines/bin/jekyll
+/usr/local/lib/ruby/gems/2.2.0/doc/jekyll-3.2.0/ri/lib/jekyll
+/usr/local/lib/ruby/gems/2.2.0/gems/jekyll-3.2.0/exe/jekyll
+/usr/local/lib/ruby/gems/2.2.0/gems/jekyll-3.2.0/lib/jekyll
+/usr/local/lib/ruby/gems/2.2.0/gems/jekyll-sass-converter-1.4.0/lib/jekyll
+/usr/local/lib/ruby/gems/2.2.0/gems/jekyll-watch-1.5.0/lib/jekyll
+/usr/local/lib/ruby/gems/2.3.0/doc/jekyll-3.2.0/ri/lib/jekyll
+/usr/local/lib/ruby/gems/2.3.0/gems/jekyll-3.2.0/exe/jekyll
+/usr/local/lib/ruby/gems/2.3.0/gems/jekyll-3.2.0/lib/jekyll
+/usr/local/lib/ruby/gems/2.3.0/gems/jekyll-sass-converter-1.4.0/lib/jekyll
+/usr/local/lib/ruby/gems/2.3.0/gems/jekyll-watch-1.5.0/lib/jekyll
+Harrys-MacBook:Harry-Site HarryBaines$ sudo find / -name jekyll
+^CHarrys-MacBook:Harry-Site HarryBaines$ gem environment
+RubyGems Environment:
+  - RUBYGEMS VERSION: 2.0.14
+  - RUBY VERSION: 2.0.0 (2015-04-13 patchlevel 645) [universal.x86_64-darwin15]
+  - INSTALLATION DIRECTORY: /Library/Ruby/Gems/2.0.0
+  - RUBY EXECUTABLE: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby
+  - EXECUTABLE DIRECTORY: /usr/local/bin
+  - RUBYGEMS PLATFORMS:
+    - ruby
+    - universal-darwin-15
+  - GEM PATHS:
+     - /Library/Ruby/Gems/2.0.0
+     - /Users/HarryBaines/.gem/ruby/2.0.0
+     - /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0
+  - GEM CONFIGURATION:
+     - :update_sources => true
+     - :verbose => true
+     - :backtrace => false
+     - :bulk_threshold => 1000
+  - REMOTE SOURCES:
+     - https://rubygems.org/
+Harrys-MacBook:Harry-Site HarryBaines$ nano $HOME/.bash_profile
+Harrys-MacBook:Harry-Site HarryBaines$ jekyll
+-bash: /usr/local/bin/jekyll: No such file or directory
+Harrys-MacBook:Harry-Site HarryBaines$ gem install jekyll
+Fetching: jekyll-3.2.0.gem (100%)
+ERROR:  While executing gem ... (Gem::FilePermissionError)
+    You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory.
+Harrys-MacBook:Harry-Site HarryBaines$ sudo gem install jekyll
+Fetching: jekyll-3.2.0.gem (100%)
+Successfully installed jekyll-3.2.0
+Parsing documentation for jekyll-3.2.0
+Installing ri documentation for jekyll-3.2.0
+1 gem installed
+Harrys-MacBook:Harry-Site HarryBaines$ jekyll -v
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Library/Ruby/Gems/2.0.0/gems/jekyll-3.2.0/lib/jekyll/plugin_manager.rb:34:in `require_from_bundler'
+	from /Library/Ruby/Gems/2.0.0/gems/jekyll-3.2.0/exe/jekyll:9:in `<top (required)>'
+	from /usr/local/bin/jekyll:23:in `load'
+	from /usr/local/bin/jekyll:23:in `<main>'
+Harrys-MacBook:Harry-Site HarryBaines$ sudo gem install jekyll
+Fetching: liquid-3.0.6.gem (100%)
+Successfully installed liquid-3.0.6
+Fetching: kramdown-1.11.1.gem (100%)
+Successfully installed kramdown-1.11.1
+Fetching: mercenary-0.3.6.gem (100%)
+Successfully installed mercenary-0.3.6
+Fetching: safe_yaml-1.0.4.gem (100%)
+Successfully installed safe_yaml-1.0.4
+Fetching: colorator-1.1.0.gem (100%)
+Successfully installed colorator-1.1.0
+Fetching: rouge-1.11.1.gem (100%)
+Successfully installed rouge-1.11.1
+Fetching: sass-3.4.22.gem (100%)
+Successfully installed sass-3.4.22
+Fetching: jekyll-sass-converter-1.4.0.gem (100%)
+Successfully installed jekyll-sass-converter-1.4.0
+Fetching: rb-fsevent-0.9.7.gem (100%)
+Successfully installed rb-fsevent-0.9.7
+Fetching: ffi-1.9.14.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed ffi-1.9.14
+Fetching: rb-inotify-0.9.7.gem (100%)
+Successfully installed rb-inotify-0.9.7
+Fetching: listen-3.0.8.gem (100%)
+Successfully installed listen-3.0.8
+Fetching: jekyll-watch-1.5.0.gem (100%)
+Successfully installed jekyll-watch-1.5.0
+Fetching: forwardable-extended-2.6.0.gem (100%)
+Successfully installed forwardable-extended-2.6.0
+Fetching: pathutil-0.14.0.gem (100%)
+Successfully installed pathutil-0.14.0
+Fetching: jekyll-3.2.0.gem (100%)
+Successfully installed jekyll-3.2.0
+Parsing documentation for liquid-3.0.6
+Installing ri documentation for liquid-3.0.6
+Parsing documentation for kramdown-1.11.1
+Installing ri documentation for kramdown-1.11.1
+Parsing documentation for mercenary-0.3.6
+Installing ri documentation for mercenary-0.3.6
+Parsing documentation for safe_yaml-1.0.4
+Installing ri documentation for safe_yaml-1.0.4
+Parsing documentation for colorator-1.1.0
+Installing ri documentation for colorator-1.1.0
+Parsing documentation for rouge-1.11.1
+Installing ri documentation for rouge-1.11.1
+Parsing documentation for sass-3.4.22
+Installing ri documentation for sass-3.4.22
+Parsing documentation for jekyll-sass-converter-1.4.0
+Installing ri documentation for jekyll-sass-converter-1.4.0
+Parsing documentation for rb-fsevent-0.9.7
+Installing ri documentation for rb-fsevent-0.9.7
+Parsing documentation for ffi-1.9.14
+Installing ri documentation for ffi-1.9.14
+Parsing documentation for rb-inotify-0.9.7
+Installing ri documentation for rb-inotify-0.9.7
+Parsing documentation for listen-3.0.8
+Installing ri documentation for listen-3.0.8
+Parsing documentation for jekyll-watch-1.5.0
+Installing ri documentation for jekyll-watch-1.5.0
+Parsing documentation for forwardable-extended-2.6.0
+Installing ri documentation for forwardable-extended-2.6.0
+Parsing documentation for pathutil-0.14.0
+Installing ri documentation for pathutil-0.14.0
+Parsing documentation for jekyll-3.2.0
+Installing ri documentation for jekyll-3.2.0
+16 gems installed
+Harrys-MacBook:Harry-Site HarryBaines$ jekyll -v
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Library/Ruby/Gems/2.0.0/gems/jekyll-3.2.0/lib/jekyll/plugin_manager.rb:34:in `require_from_bundler'
+	from /Library/Ruby/Gems/2.0.0/gems/jekyll-3.2.0/exe/jekyll:9:in `<top (required)>'
+	from /usr/local/bin/jekyll:23:in `load'
+	from /usr/local/bin/jekyll:23:in `<main>'
+Harrys-MacBook:Harry-Site HarryBaines$ sudo jekyll -v
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Library/Ruby/Gems/2.0.0/gems/jekyll-3.2.0/lib/jekyll/plugin_manager.rb:34:in `require_from_bundler'
+	from /Library/Ruby/Gems/2.0.0/gems/jekyll-3.2.0/exe/jekyll:9:in `<top (required)>'
+	from /usr/local/bin/jekyll:23:in `load'
+	from /usr/local/bin/jekyll:23:in `<main>'
+Harrys-MacBook:Harry-Site HarryBaines$ brew install ruby
+==> Installing dependencies for ruby: readline, libyaml, openssl
+==> Installing ruby dependency: readline
+==> Downloading https://homebrew.bintray.com/bottles/readline-6.3.8.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring readline-6.3.8.el_capitan.bottle.tar.gz
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local.
+
+OS X provides the BSD libedit library, which shadows libreadline.
+In order to prevent conflicts when programs look for libreadline we are
+defaulting this GNU Readline installation to keg-only.
+
+
+Generally there are no consequences of this for you. If you build your
+own software and it requires this formula, you'll need to add to your
+build variables:
+
+    LDFLAGS:  -L/usr/local/opt/readline/lib
+    CPPFLAGS: -I/usr/local/opt/readline/include
+
+==> Summary
+🍺  /usr/local/Cellar/readline/6.3.8: 46 files, 2.0M
+==> Installing ruby dependency: libyaml
+==> Downloading https://homebrew.bintray.com/bottles/libyaml-0.1.6_1.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring libyaml-0.1.6_1.el_capitan.bottle.tar.gz
+Warning: This keg was marked linked already, continuing anyway
+🍺  /usr/local/Cellar/libyaml/0.1.6_1: 8 files, 312.8K
+==> Installing ruby dependency: openssl
+==> Downloading https://homebrew.bintray.com/bottles/openssl-1.0.2h_1.el_capitan.bottle.tar.gz
+Already downloaded: /Users/HarryBaines/Library/Caches/Homebrew/openssl-1.0.2h_1.el_capitan.bottle.tar.gz
+==> Pouring openssl-1.0.2h_1.el_capitan.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /usr/local/etc/openssl/certs
+
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+This formula is keg-only, which means it was not symlinked into /usr/local.
+
+Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries
+
+Generally there are no consequences of this for you. If you build your
+own software and it requires this formula, you'll need to add to your
+build variables:
+
+    LDFLAGS:  -L/usr/local/opt/openssl/lib
+    CPPFLAGS: -I/usr/local/opt/openssl/include
+
+==> Summary
+🍺  /usr/local/Cellar/openssl/1.0.2h_1: 1,691 files, 12M
+==> Installing ruby
+==> Downloading https://homebrew.bintray.com/bottles/ruby-2.3.1.el_capitan.bottle.tar.gz
+Already downloaded: /Users/HarryBaines/Library/Caches/Homebrew/ruby-2.3.1.el_capitan.bottle.tar.gz
+==> Pouring ruby-2.3.1.el_capitan.bottle.tar.gz
+Warning: This keg was marked linked already, continuing anyway
+==> Caveats
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/ruby
+==> Summary
+🍺  /usr/local/Cellar/ruby/2.3.1: 1,260 files, 19.0M
+Harrys-MacBook:Harry-Site HarryBaines$ sudo jekyll -v
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+	from /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Library/Ruby/Gems/2.0.0/gems/jekyll-3.2.0/lib/jekyll/plugin_manager.rb:34:in `require_from_bundler'
+	from /Library/Ruby/Gems/2.0.0/gems/jekyll-3.2.0/exe/jekyll:9:in `<top (required)>'
+	from /usr/local/bin/jekyll:23:in `load'
+	from /usr/local/bin/jekyll:23:in `<main>'
+Harrys-MacBook:Harry-Site HarryBaines$ brew install curl -L https://get.rvm.io | bash -s stable --ruby
+Error: Failure while executing: /usr/bin/curl --fail --progress-bar --remote-time --location --user-agent Homebrew/0.9.9\ (Macintosh;\ Intel\ Mac\ OS\ X\ 10.11)\ curl/7.43.0 https://get.rvm.io -o /Users/HarryBaines/Library/Caches/Homebrew/Formula --silent
+Harrys-MacBook:Harry-Site HarryBaines$ sudo curl -L https://get.rvm.io | bash -s stable --ruby
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   184  100   184    0     0    342      0 --:--:-- --:--:-- --:--:--   342
+100 22865  100 22865    0     0  18666      0  0:00:01  0:00:01 --:--:--  136k
+Downloading https://github.com/rvm/rvm/archive/1.27.0.tar.gz
+Downloading https://github.com/rvm/rvm/releases/download/1.27.0/1.27.0.tar.gz.asc
+Found PGP signature at: 'https://github.com/rvm/rvm/releases/download/1.27.0/1.27.0.tar.gz.asc',
+but no GPG software exists to validate it, skipping.
+
+Installing RVM to /Users/HarryBaines/.rvm/
+    Adding rvm PATH line to /Users/HarryBaines/.profile /Users/HarryBaines/.mkshrc /Users/HarryBaines/.bashrc /Users/HarryBaines/.zshrc.
+    Adding rvm loading line to /Users/HarryBaines/.profile /Users/HarryBaines/.bash_profile /Users/HarryBaines/.zlogin.
+Installation of RVM in /Users/HarryBaines/.rvm/ is almost complete:
+
+  * To start using RVM you need to run `source /Users/HarryBaines/.rvm/scripts/rvm`
+    in all your open shell windows, in rare cases you need to reopen all shell windows.
+
+# Harry Baines,
+#
+#   Thank you for using RVM!
+#   We sincerely hope that RVM helps to make your life easier and more enjoyable!!!
+#
+# ~Wayne, Michal & team.
+
+In case of problems: https://rvm.io/help and https://twitter.com/rvm_io
+
+  * WARNING: You have '~/.profile' file, you might want to load it,
+    to do that add the following line to '/Users/HarryBaines/.bash_profile':
+
+      source ~/.profile
+
+rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+Searching for binary rubies, this might take some time.
+No binary rubies available for: osx/10.11/x86_64/ruby-2.3.0.
+Continuing with compilation. Please read 'rvm help mount' to get more information on binary rubies.
+Checking requirements for osx.
+Installing requirements for osx.
+Updating system......
+Installing required packages: autoconf, automake, libtool, pkg-config, libksba....
+Certificates in '/usr/local/etc/openssl/cert.pem' are already up to date.
+Requirements installation successful.
+Found user configured '-j' flag in 'rvm_make_flags', please note that RVM can detect number of CPU threads and set the '-j' flag automatically if you do not set it.
+Installing Ruby from source to: /Users/HarryBaines/.rvm/rubies/ruby-2.3.0, this may take a while depending on your cpu(s)...
+ruby-2.3.0 - #downloading ruby-2.3.0, this may take a while depending on your connection...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 13.5M  100 13.5M    0     0  2439k      0  0:00:05  0:00:05 --:--:-- 3339k
+ruby-2.3.0 - #extracting ruby-2.3.0 to /Users/HarryBaines/.rvm/src/ruby-2.3.0....
+ruby-2.3.0 - #configuring...........................................................
+ruby-2.3.0 - #post-configuration.
+ruby-2.3.0 - #compiling.............................................................
+ruby-2.3.0 - #installing.........
+ruby-2.3.0 - #making binaries executable..
+Installed rubygems 2.5.1 is newer than 2.4.8 provided with installed ruby, skipping installation, use --force to force installation.
+ruby-2.3.0 - #gemset created /Users/HarryBaines/.rvm/gems/ruby-2.3.0@global
+ruby-2.3.0 - #importing gemset /Users/HarryBaines/.rvm/gemsets/global.gems...............................................
+ruby-2.3.0 - #generating global wrappers........
+ruby-2.3.0 - #gemset created /Users/HarryBaines/.rvm/gems/ruby-2.3.0
+ruby-2.3.0 - #importing gemsetfile /Users/HarryBaines/.rvm/gemsets/default.gems evaluated to empty gem list
+ruby-2.3.0 - #generating default wrappers........
+ruby-2.3.0 - #adjusting #shebangs for (gem irb erb ri rdoc testrb rake).
+Install of ruby-2.3.0 - #complete 
+Ruby was built without documentation, to build it run: rvm docs generate-ri
+/Users/HarryBaines/.rvm/bin/rvm: line 66: shell_session_update: command not found
+Creating alias default for ruby-2.3.0...
+
+  * To start using RVM you need to run `source /Users/HarryBaines/.rvm/scripts/rvm`
+    in all your open shell windows, in rare cases you need to reopen all shell windows.
+bash: line 825: shell_session_update: command not found
+Harrys-MacBook:Harry-Site HarryBaines$ source /Users/HarryBaines/.rvm/scripts/rvm
+RVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
+you can ignore these warnings with 'rvm rvmrc warning ignore /Users/HarryBaines/Desktop/Harry-Site/Gemfile'.
+To ignore the warning for all files run 'rvm rvmrc warning ignore allGemfiles'.
+
+Unknown ruby interpreter version (do not know how to handle): RUBY_VERSION.
+Harrys-MacBook:Harry-Site HarryBaines$ sudo source /Users/HarryBaines/.rvm/scripts/rvm
+Password:
+sudo: source: command not found
+Harrys-MacBook:Harry-Site HarryBaines$ rvm -v
+rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+Harrys-MacBook:Harry-Site HarryBaines$ rvm list
+
+rvm rubies
+
+=* ruby-2.3.0 [ x86_64 ]
+
+# => - current
+# =* - current && default
+#  * - default
+
+Harrys-MacBook:Harry-Site HarryBaines$ gem install jekyll
+Fetching: liquid-3.0.6.gem (100%)
+Successfully installed liquid-3.0.6
+Fetching: kramdown-1.11.1.gem (100%)
+Successfully installed kramdown-1.11.1
+Fetching: mercenary-0.3.6.gem (100%)
+Successfully installed mercenary-0.3.6
+Fetching: safe_yaml-1.0.4.gem (100%)
+Successfully installed safe_yaml-1.0.4
+Fetching: colorator-1.1.0.gem (100%)
+Successfully installed colorator-1.1.0
+Fetching: rouge-1.11.1.gem (100%)
+Successfully installed rouge-1.11.1
+Fetching: sass-3.4.22.gem (100%)
+Successfully installed sass-3.4.22
+Fetching: jekyll-sass-converter-1.4.0.gem (100%)
+Successfully installed jekyll-sass-converter-1.4.0
+Fetching: rb-fsevent-0.9.7.gem (100%)
+Successfully installed rb-fsevent-0.9.7
+Fetching: ffi-1.9.14.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed ffi-1.9.14
+Fetching: rb-inotify-0.9.7.gem (100%)
+Successfully installed rb-inotify-0.9.7
+Fetching: listen-3.0.8.gem (100%)
+Successfully installed listen-3.0.8
+Fetching: jekyll-watch-1.5.0.gem (100%)
+Successfully installed jekyll-watch-1.5.0
+Fetching: forwardable-extended-2.6.0.gem (100%)
+Successfully installed forwardable-extended-2.6.0
+Fetching: pathutil-0.14.0.gem (100%)
+Successfully installed pathutil-0.14.0
+Fetching: jekyll-3.2.0.gem (100%)
+Successfully installed jekyll-3.2.0
+Parsing documentation for liquid-3.0.6
+Installing ri documentation for liquid-3.0.6
+Parsing documentation for kramdown-1.11.1
+Installing ri documentation for kramdown-1.11.1
+Parsing documentation for mercenary-0.3.6
+Installing ri documentation for mercenary-0.3.6
+Parsing documentation for safe_yaml-1.0.4
+Installing ri documentation for safe_yaml-1.0.4
+Parsing documentation for colorator-1.1.0
+Installing ri documentation for colorator-1.1.0
+Parsing documentation for rouge-1.11.1
+Installing ri documentation for rouge-1.11.1
+Parsing documentation for sass-3.4.22
+Installing ri documentation for sass-3.4.22
+Parsing documentation for jekyll-sass-converter-1.4.0
+Installing ri documentation for jekyll-sass-converter-1.4.0
+Parsing documentation for rb-fsevent-0.9.7
+Installing ri documentation for rb-fsevent-0.9.7
+Parsing documentation for ffi-1.9.14
+Installing ri documentation for ffi-1.9.14
+Parsing documentation for rb-inotify-0.9.7
+Installing ri documentation for rb-inotify-0.9.7
+Parsing documentation for listen-3.0.8
+Installing ri documentation for listen-3.0.8
+Parsing documentation for jekyll-watch-1.5.0
+Installing ri documentation for jekyll-watch-1.5.0
+Parsing documentation for forwardable-extended-2.6.0
+Installing ri documentation for forwardable-extended-2.6.0
+Parsing documentation for pathutil-0.14.0
+Installing ri documentation for pathutil-0.14.0
+Parsing documentation for jekyll-3.2.0
+Installing ri documentation for jekyll-3.2.0
+Done installing documentation for liquid, kramdown, mercenary, safe_yaml, colorator, rouge, sass, jekyll-sass-converter, rb-fsevent, ffi, rb-inotify, listen, jekyll-watch, forwardable-extended, pathutil, jekyll after 43 seconds
+16 gems installed
+Harrys-MacBook:Harry-Site HarryBaines$ jekyll -v
+/Users/HarryBaines/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+	from /Users/HarryBaines/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/HarryBaines/.rvm/gems/ruby-2.3.0/gems/jekyll-3.2.0/lib/jekyll/plugin_manager.rb:34:in `require_from_bundler'
+	from /Users/HarryBaines/.rvm/gems/ruby-2.3.0/gems/jekyll-3.2.0/exe/jekyll:9:in `<top (required)>'
+	from /Users/HarryBaines/.rvm/gems/ruby-2.3.0/bin/jekyll:23:in `load'
+	from /Users/HarryBaines/.rvm/gems/ruby-2.3.0/bin/jekyll:23:in `<main>'
+	from /Users/HarryBaines/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/HarryBaines/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+Harrys-MacBook:Harry-Site HarryBaines$ sudo -R chmod 777 /Users/HarryBaines/.rvm/
+sudo: illegal option -- R
+usage: sudo -h | -K | -k | -L | -V
+usage: sudo -v [-AknS] [-g groupname|#gid] [-p prompt] [-u user name|#uid]
+usage: sudo -l[l] [-AknS] [-g groupname|#gid] [-p prompt] [-U user name] [-u user name|#uid] [-g groupname|#gid] [command]
+usage: sudo [-AbEHknPS] [-C fd] [-g groupname|#gid] [-p prompt] [-u user name|#uid] [-g groupname|#gid] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-C fd] [-g groupname|#gid] [-p prompt] [-u user name|#uid] file ...
+Harrys-MacBook:Harry-Site HarryBaines$ sudo -R chmod 777 /Users/HarryBaines/.rvm
+sudo: illegal option -- R
+usage: sudo -h | -K | -k | -L | -V
+usage: sudo -v [-AknS] [-g groupname|#gid] [-p prompt] [-u user name|#uid]
+usage: sudo -l[l] [-AknS] [-g groupname|#gid] [-p prompt] [-U user name] [-u user name|#uid] [-g groupname|#gid] [command]
+usage: sudo [-AbEHknPS] [-C fd] [-g groupname|#gid] [-p prompt] [-u user name|#uid] [-g groupname|#gid] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-C fd] [-g groupname|#gid] [-p prompt] [-u user name|#uid] file ...
+Harrys-MacBook:Harry-Site HarryBaines$ sudo -R chmod 777 /Users/HarryBaines/.rvm
+sudo: illegal option -- R
+usage: sudo -h | -K | -k | -L | -V
+usage: sudo -v [-AknS] [-g groupname|#gid] [-p prompt] [-u user name|#uid]
+usage: sudo -l[l] [-AknS] [-g groupname|#gid] [-p prompt] [-U user name] [-u user name|#uid] [-g groupname|#gid] [command]
+usage: sudo [-AbEHknPS] [-C fd] [-g groupname|#gid] [-p prompt] [-u user name|#uid] [-g groupname|#gid] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-C fd] [-g groupname|#gid] [-p prompt] [-u user name|#uid] file ...
+Harrys-MacBook:Harry-Site HarryBaines$ sudo chmod -R 777 /Users/HarryBaines/.rvm
+Harrys-MacBook:Harry-Site HarryBaines$ jekyll -v
+/Users/HarryBaines/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- bundler (LoadError)
+	from /Users/HarryBaines/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/HarryBaines/.rvm/gems/ruby-2.3.0/gems/jekyll-3.2.0/lib/jekyll/plugin_manager.rb:34:in `require_from_bundler'
+	from /Users/HarryBaines/.rvm/gems/ruby-2.3.0/gems/jekyll-3.2.0/exe/jekyll:9:in `<top (required)>'
+	from /Users/HarryBaines/.rvm/gems/ruby-2.3.0/bin/jekyll:23:in `load'
+	from /Users/HarryBaines/.rvm/gems/ruby-2.3.0/bin/jekyll:23:in `<main>'
+	from /Users/HarryBaines/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/HarryBaines/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+Harrys-MacBook:Harry-Site HarryBaines$ gem install bundler
+Fetching: bundler-1.12.5.gem (100%)
+Successfully installed bundler-1.12.5
+Parsing documentation for bundler-1.12.5
+Installing ri documentation for bundler-1.12.5
+Done installing documentation for bundler after 6 seconds
+1 gem installed
+Harrys-MacBook:Harry-Site HarryBaines$ bundle install
+Fetching gem metadata from https://rubygems.org/
+Fetching version metadata from https://rubygems.org/
+Fetching dependency metadata from https://rubygems.org/
+Resolving dependencies...
+Using colorator 1.1.0
+Using ffi 1.9.14
+Using forwardable-extended 2.6.0
+Using sass 3.4.22
+Using rb-fsevent 0.9.7
+Using kramdown 1.11.1
+Using liquid 3.0.6
+Using mercenary 0.3.6
+Using rouge 1.11.1
+Using safe_yaml 1.0.4
+Installing minima 1.0.1
+Using bundler 1.12.5
+Using rb-inotify 0.9.7
+Using pathutil 0.14.0
+Using jekyll-sass-converter 1.4.0
+Using listen 3.0.8
+Using jekyll-watch 1.5.0
+Using jekyll 3.2.0
+Bundle complete! 2 Gemfile dependencies, 18 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+Harrys-MacBook:Harry-Site HarryBaines$ jekyll
+A subcommand is required. 
+jekyll 3.2.0 -- Jekyll is a blog-aware, static site generator in Ruby
+
+Usage:
+
+  jekyll <subcommand> [options]
+
+Options:
+        -s, --source [DIR]  Source directory (defaults to ./)
+        -d, --destination [DIR]  Destination directory (defaults to ./_site)
+            --safe         Safe mode (defaults to false)
+        -p, --plugins PLUGINS_DIR1[,PLUGINS_DIR2[,...]]  Plugins directory (defaults to ./_plugins)
+            --layouts DIR  Layouts directory (defaults to ./_layouts)
+            --profile      Generate a Liquid rendering profile
+        -h, --help         Show this message
+        -v, --version      Print the name and version
+        -t, --trace        Show the full backtrace when an error occurs
+
+Subcommands:
+  docs                  
+  import                
+  build, b              Build your site
+  clean                 Clean the site (removes site output and metadata file) without building.
+  doctor, hyde          Search site and print specific deprecation warnings
+  help                  Show the help message, optionally for a given subcommand.
+  new                   Creates a new Jekyll site scaffold in PATH
+  new-theme             Creates a new Jekyll theme scaffold
+  serve, server, s      Serve your site locally
+Harrys-MacBook:Harry-Site HarryBaines$ jekyll -v
+jekyll 3.2.0
+Harrys-MacBook:Harry-Site HarryBaines$ jekyll build
+Configuration file: /Users/HarryBaines/Desktop/Harry-Site/_config.yml
+            Source: /Users/HarryBaines/Desktop/Harry-Site
+       Destination: /Users/HarryBaines/Desktop/Harry-Site/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.502 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+Harrys-MacBook:Harry-Site HarryBaines$ jekyll serve
+Configuration file: /Users/HarryBaines/Desktop/Harry-Site/_config.yml
+            Source: /Users/HarryBaines/Desktop/Harry-Site
+       Destination: /Users/HarryBaines/Desktop/Harry-Site/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.426 seconds.
+ Auto-regeneration: enabled for '/Users/HarryBaines/Desktop/Harry-Site'
+Configuration file: /Users/HarryBaines/Desktop/Harry-Site/_config.yml
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+[2016-07-28 21:04:15] ERROR `/favicon.ico' not found.
+
