@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Useful Terminal Networking Commands"
-categories: Terminal Guides
-author: Harry
----
-
-This is just a test. Don't worry about this. Seriously.
