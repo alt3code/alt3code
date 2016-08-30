@@ -5,20 +5,11 @@ categories: Python Guides
 author: Harry
 ---
 
-<style>
-.mainbodytext {
-	background-color: #3399ff;
-}
-</style>
-
-<div class = "mainbodytext">
-
 The code below utilises the Tweepy module specifically designed to interact with the Twitter API. 
 In order to start using the Tweepy module yourself, you must follow these steps;
 
-<br><br>
-<strong>Step One:</strong>
 <br>
+<strong>Step One:</strong>
 
 Download Tweepy via the command line;
 {% highlight git bash %}
@@ -56,7 +47,6 @@ for tweet in public_tweets:
 
 Visit the docs for loads of info:- <a href="http://tweepy.readthedocs.io/en/v3.5.0/getting_started.html">Tweepy Docs</a>
 
-</div>
 
 
 
