@@ -18,8 +18,9 @@ $text-color:       #dadada;
 $background-color: #fdfdfd;
 $brand-color:      #ffffff;
 
+// Posts
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color-light: lighten($grey-color, 0%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
