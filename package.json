@@ -1,0 +1,26 @@
+{
+  "name": "alt3code",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.2.0",
+    "@material-ui/icons": "^1.1.0",
+    "material-ui-search-bar": "^0.4.2",
+    "npm": "^6.1.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "1.1.4",
+    "react-scrollreveal": "^1.1.2",
+    "react-swipeable-views": "^0.12.13",
+    "react-syntax-highlighter": "^7.0.4",
+    "react-typist": "^2.0.4"
+  },
+  "scripts": {
+    "start": "NODE_PATH=src:src/components:src/containers:src/utils react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

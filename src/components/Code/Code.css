@@ -1,0 +1,15 @@
+.codeWrapper {
+	margin: 0;
+	display: inline-block;
+	font-size: 5em;
+    background-color: rgb(235,235,235);
+}
+.code-large {
+	font-size: .5em;
+}
+.code-med {
+	font-size: .25em;
+}
+.code-small {
+	font-size: .1em;
+}
