@@ -1,31 +1,14 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
 import './Footer.css';
 
 const Footer = () => {
   return (
     <div className="customFooter">
-	   <Grid container
-	   		alignItems="center"
-            direction="row"
-            justify="space-around"
-        >
-            <Grid key="Contact1" item xs={12} md={4}>
-                <p className="contactTitle">Contact</p>
-                <br />
-                <p className="contactDescription">Contact us.</p>
-            </Grid>
-            <Grid key="Contact2" item xs={12} md={4}>
-                <p className="contactTitle">Contact</p>
-                <br />
-                <p className="contactDescription">Contact us.</p>
-            </Grid>
-            <Grid key="Contact3" item xs={12} md={4}>
-                <p className="contactTitle">Contact</p>
-                <br />
-                <p className="contactDescription">Contact us.</p>
-            </Grid>
-	   </Grid>
+        <p className="contactTitle">Contact Us</p>
+        <hr className="footerBreak"/>
+        <a href="mailto:someone@yoursite.com" className="emailLink">ouremail@googlemail.com</a>  
+        <p className="contactDescription">Here at alt3code our goal is to ... </p>
+        <p className="copyrightText">Copyright &copy; 2018 alt3code</p>
     </div>
   );
 }

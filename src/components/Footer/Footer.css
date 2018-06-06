@@ -1,6 +1,40 @@
 .customFooter {
+	font-size: 1.25em;
 	min-height: 400px;
 	padding: 50px;
 	text-align: center;
 	background-color: rgb(230,230,230);
+	position: relative;
+}
+.contactTitle {
+	font-size: 2em;
+	margin: 0px 20px 20px 20px;
+}
+.footerBreak {
+	width: 100px;
+	border-radius: 20px;
+	border: 1px solid black;
+	margin-bottom: 50px;
+}
+.emailLink {
+	font-size: 1.2em;
+	margin: 0px 20px 50px 20px;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: rgb(63,81,181);
+	text-decoration: none;
+	color: white;
+	box-shadow: 2px 10px 20px 2px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	display: inline-block;
+	transition: all .2s;
+}
+.emailLink:hover {
+	transform: scale(1.03);
+}
+.copyrightText {
+	font-size: .8em;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
 }
