@@ -9,6 +9,8 @@ import LandingInfoLink from 'LandingInfoLink/LandingInfoLink';
 import { Code, Bookmark, Widgets, LaptopMac } from '@material-ui/icons';
 import TempProjImage from '../../images/hip-square.png';
 import AltChart from 'AltChart/AltChart';
+import MathEquation from 'MathEquation/MathEquation';
+import SigmoidGif from '../../images/sigmoid.gif';
 
 const styles = theme => ({
   root: {
@@ -98,7 +100,8 @@ class LandingInfo extends React.Component {
             alignItems="center"
           >
           <Grid key="Chart" item xs={12} lg={3}>
-            <AltChart />
+            {/*<AltChart equationOverlay={<MathEquation equation={`S\\left(x\\right ) = \\frac{1}{1+e^{-x}}`} />}/>*/}
+            <AltChart equationOverlay={<img src={SigmoidGif} />}/>
           </Grid>
           <Grid key="ChartText" item xs={12} lg={9} style={{padding: '150px'}}>
             <h1>Python Machine Learning</h1>
