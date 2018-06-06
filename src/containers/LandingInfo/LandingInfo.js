@@ -16,7 +16,7 @@ const styles = theme => ({
     borderRadius: '10px',  
     background:'white',
     margin: '0 auto',
-    marginTop: '650px',
+    marginTop: '400px',
     marginBottom: '25px',
     padding: '25px',
     position:'relative',
@@ -37,10 +37,15 @@ class LandingInfo extends React.Component {
           justify="space-around"
           alignItems="center"
         >
+          {/* Who we are */}
+          <Grid key="ProjImage" item xs={12} style={{textAlign:"center"}}>
+              <p className="whoWeAreText">Mollit elit excepteur in consectetur sunt ad et anim fugiat occaecat qui dolor dolore sed consequat cillum aute sunt nostrud ullamco eiusmod in non irure nisi.</p>
+          </Grid>
+          <hr className="customBreak" />
+
+          {/* What we offer div grid */}
           <Grid key="Projects" item xs={12}>
-            <Fade top>
-              <p className="landingInfoTitle">What we do</p>
-            </Fade>
+            <p className="landingInfoTitle">What we do</p>
           </Grid>
           <Grid key="Projects" item xs={12} md={6} xl={3}>
             <Fade left>
@@ -63,12 +68,13 @@ class LandingInfo extends React.Component {
             </Fade>
           </Grid>
           <br />
+
+          {/* Latest Project div */}
           <Grid key="LatestProj" item xs={12}>
               <Fade top>
                   <h1 className="landingInfoProjTitle">Our Latest Project</h1>
               </Fade>
           </Grid>
-
           <Grid key="ProjImage" item xs={12} lg={6} style={{textAlign:"center"}}>
               <img src={TempProjImage} className="latestProjImage" alt="Latest Project"/>
           </Grid>

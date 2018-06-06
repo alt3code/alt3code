@@ -7,3 +7,9 @@
 .main {
 	flex: 1;
 }
+.custom-bg {
+	/*NEW*/
+	width: 100vw;
+	height: 1000px;
+	background: url('../../images/concrete_seamless.png');
+}

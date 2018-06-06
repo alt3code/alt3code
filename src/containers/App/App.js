@@ -1,7 +1,7 @@
 import React from 'react';
+import { Parallax, Background } from 'react-parallax';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-
 import LandingInfo from 'LandingInfo/LandingInfo';
 import LandingHeader from 'LandingHeader/LandingHeader';
 import Navbar from 'Navbar/Navbar';
@@ -16,8 +16,13 @@ class App extends React.Component {
         <div className="App">
           <Navbar />
           <div className="main">
-            <LandingHeader />
-            <LandingInfo />
+            <Parallax strength={600}>
+              <LandingHeader />
+              <Parallax strength={250}>
+                <LandingInfo />
+              </Parallax>
+              <Background className="custom-bg" />
+            </Parallax>
           </div>
           <Footer />
         </div>
