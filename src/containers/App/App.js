@@ -16,9 +16,9 @@ class App extends React.Component {
         <div className="App">
           <Navbar />
           <div className="main">
-            <Parallax strength={600}>
+            <Parallax strength={400}>
               <LandingHeader />
-              <Parallax strength={250}>
+              <Parallax>
                 <LandingInfo />
               </Parallax>
               <Background className="custom-bg" />

@@ -13,9 +13,7 @@ const LandingHeader = (props) => {
         <Zoom>
           <p className="headerText">{headerTitle}</p>
         </Zoom>
-        <Zoom left>
-          <Typer code={codeString} />
-        </Zoom>
+        <Typer code={codeString} />
     </div>
 	);
 }

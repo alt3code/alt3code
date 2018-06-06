@@ -5,7 +5,7 @@ import './Typer.css';
 
 const Typer = ({ code }) => {
     return (
-      <Typist className="code-text" avgTypingDelay={100}>
+      <Typist className="code-text" avgTypingDelay={75}>
         {code}
       </Typist>
     );
