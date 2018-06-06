@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Fade from 'react-reveal/Fade';
 import './LandingInfo.css';
 import LandingInfoCard from 'LandingInfoCard/LandingInfoCard';
+import LandingInfoLink from 'LandingInfoLink/LandingInfoLink';
 import { Code, Bookmark, Widgets, LaptopMac } from '@material-ui/icons';
 import TempProjImage from '../../images/hip-square.png';
 import AltChart from 'AltChart/AltChart';
@@ -84,9 +85,7 @@ class LandingInfo extends React.Component {
                 <h1>Project Title</h1>
                 <p>Project sub-title</p>
                 <p>Lorem ipsum deserunt incididunt reprehenderit cupidatat anim proident elit ut mollit sunt in aliquip ut commodo commodo aliquip eiusmod commodo eu dolor ut tempor do aliqua non consectetur. Sunt irure cillum laborum aliqua sint anim labore cupidatat commodo do ex aliquip duis ut laborum ut commodo minim ex culpa eu in sed dolor exercitation ullamco laboris adipisicing. Lorem ipsum in sint anim proident eu adipisicing sed et ut sed tempor adipisicing mollit in consequat culpa ut do dolor reprehenderit dolor veniam dolor culpa veniam.</p>
-                <a href="https://www.google.com">
-                  <button className="projButton" >View on GitHub</button>
-                </a>
+                <LandingInfoLink text="View on GitHub" textColor="white" bgColor="rgb(63,81,181)" link="https://www.google.com" />
             </Grid>
         </Grid>
         <Grid
@@ -105,6 +104,7 @@ class LandingInfo extends React.Component {
             <h1>Python Machine Learning</h1>
             <p>Project sub-title</p>
             <p>Eiusmod pariatur tempor ullamco esse do id irure id ex ut sed ullamco qui veniam cillum nulla incididunt est ullamco tempor voluptate excepteur amet reprehenderit tempor velit id et eu esse eu culpa veniam laboris sint excepteur nulla.</p>
+            <LandingInfoLink text="View Guides" textColor="rgb(63,81,181)" bgColor="white" link="https://www.google.com" />
           </Grid>
         </Grid>
       </div>
