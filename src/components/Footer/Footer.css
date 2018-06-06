@@ -29,8 +29,16 @@
 	transition: all .2s;
 }
 .emailLink:hover {
+	padding: 20px 30px 20px 30px;
 	transform: scale(1.03);
 }
+.no-flickr {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+} 
 .copyrightText {
 	font-size: .8em;
 	position: absolute;

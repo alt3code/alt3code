@@ -18,9 +18,7 @@ class App extends React.Component {
           <div className="main">
             <Parallax strength={400}>
               <LandingHeader />
-              <Parallax>
-                <LandingInfo />
-              </Parallax>
+              <LandingInfo />
               <Background className="custom-bg" />
             </Parallax>
           </div>

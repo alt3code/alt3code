@@ -10,11 +10,11 @@ const codeString = 'console.log("Hi there!");';
 const LandingHeader = (props) => {
 	return (
 		<div className="landingHeader">
-        <Zoom>
-          <p className="headerText">{headerTitle}</p>
-        </Zoom>
-        <Typer code={codeString} />
-    </div>
+	        <Zoom>
+	          <p className="headerText">{headerTitle}</p>
+	        </Zoom>
+	        <Typer code={codeString} />
+	    </div>
 	);
 }
 
