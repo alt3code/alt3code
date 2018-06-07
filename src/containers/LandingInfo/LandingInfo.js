@@ -9,8 +9,8 @@ import LandingInfoLink from 'LandingInfoLink/LandingInfoLink';
 import { Code, Bookmark, Widgets, LaptopMac } from '@material-ui/icons';
 import TempProjImage from '../../images/hip-square.png';
 import AltChart from 'AltChart/AltChart';
-import MathEquation from 'MathEquation/MathEquation';
 import SigmoidGif from '../../images/sigmoid.gif';
+import { Parallax } from 'react-scroll-parallax';
 
 const styles = theme => ({
   root: {
@@ -20,7 +20,7 @@ const styles = theme => ({
     borderRadius: '10px',  
     background:'white',
     margin: '0 auto',
-    marginTop: '350px',
+    marginTop: '425px',
     marginBottom: '75px',
     padding: '25px',
     position:'relative',
@@ -48,37 +48,76 @@ class LandingInfo extends React.Component {
             </Grid>
             <hr className="customBreak" />
 
-            {/* What we offer div grid */}
-            <Grid key="Projects" item xs={12}>
-              <p className="landingInfoTitle">What we do</p>
+            {/* What we do div grid */}
+            <Grid key="Projects" item xs={12}>  
+                <Parallax
+                    className="custom-class"
+                    offsetYMax={20}
+                    offsetYMin={-20}
+                    slowerScrollRate
+                    tag="figure"
+                >
+                    <p className="landingInfoTitle">What we do</p>
+                </Parallax>    
+                
             </Grid>
-            <Grid key="Projects" item xs={12} md={6} xl={3}>
-              <Fade left>
+            
+            <Grid
+              container
+              spacing={16}
+              direction="row"
+              justify="space-around"
+              alignItems="center"
+              style={{margin: '40px'}}
+            >
+              <Grid key="Projects" className="offerDiv" item xs={12} md={7}>
                 <LandingInfoCard title="Projects" icon={<LaptopMac style={{color:'green', fontSize: '52px'}}/>} description="Eu pariatur do cillum duis incididunt deserunt mollit dolore labore."/>
-              </Fade>
+              </Grid>
+              <Grid item xs={12} md={5} />
             </Grid>
-            <Grid key="Guides" item xs={12} md={6} xl={3}>
-              <Fade top>
-              <LandingInfoCard title="Guides" icon={<Bookmark style={{color:'blue', fontSize: '52px'}}/>} description="Qui magna dolore sit laboris eu esse ut deserunt occaecat."/>
-              </Fade>
+            <Grid
+              container
+              spacing={16}
+              direction="row"
+              justify="space-around"
+              alignItems="center"
+              style={{margin: '40px'}}
+            >
+              <Grid item xs={12} md={5} />
+              <Grid key="Guides" className="offerDiv" item xs={12} md={7}>
+                <LandingInfoCard title="Guides" icon={<Bookmark style={{color:'blue', fontSize: '52px'}}/>} description="Qui magna dolore sit laboris eu esse ut deserunt occaecat."/>
+              </Grid>
             </Grid>
-            <Grid key="Snippets" item xs={12} md={6} xl={3}>
-              <Fade bottom>
-                <LandingInfoCard title="Snippets" icon={<Code style={{fontSize: '52px'}}/>} description="In occaecat laborum laborum anim minim dolor commodo minim laborum tempor adipisicing." />
-              </Fade>
+            <Grid
+              container
+              spacing={16}
+              direction="row"
+              justify="space-around"
+              alignItems="center"
+              style={{margin: '40px'}}
+            >
+              <Grid key="SnippetsIntro" className="offerDiv" item xs={12} md={7}>
+                <LandingInfoCard title="Snippets" icon={<LaptopMac style={{color:'green', fontSize: '52px'}}/>} description="Eu pariatur do cillum duis incididunt deserunt mollit dolore labore."/>
+              </Grid>
+              <Grid item xs={12} md={5} />
             </Grid>
-            <Grid key="Widgets" item xs={12} md={6} xl={3}>
-              <Fade right>
+            <Grid
+              container
+              spacing={16}
+              direction="row"
+              justify="space-around"
+              alignItems="center"
+              style={{margin: '40px'}}
+            >
+              <Grid item xs={12} md={5} />
+              <Grid key="Widgets" className="offerDiv" item xs={12} md={7}>
                 <LandingInfoCard title="Widgets" icon={<Widgets style={{color:'red', fontSize: '52px'}}/>} description="Quis incididunt voluptate officia incididunt enim labore dolor minim esse ullamco aliqua."/>
-              </Fade>
+              </Grid>
             </Grid>
-            <hr className="customBreak" />
 
             {/* Latest Project div */}
             <Grid key="LatestProj" item xs={12}>
-                <Fade top>
-                    <h1 className="landingInfoProjTitle">Our Latest Project</h1>
-                </Fade>
+                <h1 className="landingInfoProjTitle">Our Latest Project</h1>
             </Grid>
             <Grid key="ProjImage" item xs={12} lg={6} style={{textAlign:"center"}}>
                 <img src={TempProjImage} className="latestProjImage" alt="Latest Project"/>

@@ -2,7 +2,7 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: "Quicksand"
+  font-family: "Quicksand";
 }
 .main {
 	flex: 1;
