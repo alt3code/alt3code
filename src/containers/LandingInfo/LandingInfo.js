@@ -10,7 +10,7 @@ import { Code, Bookmark, Widgets, LaptopMac } from '@material-ui/icons';
 import TempProjImage from '../../images/hip-square.png';
 import AltChart from 'AltChart/AltChart';
 import SigmoidGif from '../../images/sigmoid.gif';
-import { Parallax } from 'react-scroll-parallax';
+import { ParallaxProvider, Parallax } from 'react-skrollr'
 
 const styles = theme => ({
   root: {
@@ -43,23 +43,21 @@ class LandingInfo extends React.Component {
             alignItems="center"
           >
             {/* Who we are */}
-            <Grid key="ProjImage" item xs={12} style={{textAlign:"center"}}>
+            <Grid key="WhoWeAreIntro" item xs={12} style={{textAlign:"center"}}>
                 <p className="whoWeAreText">Mollit elit excepteur in consectetur sunt ad et anim fugiat occaecat qui dolor dolore sed consequat cillum aute sunt nostrud ullamco eiusmod in non irure nisi.</p>
             </Grid>
             <hr className="customBreak" />
 
             {/* What we do div grid */}
-            <Grid key="Projects" item xs={12}>  
+            <Grid key="Projects" item xs={12}>      
                 <Parallax
-                    className="custom-class"
-                    offsetYMax={20}
-                    offsetYMin={-20}
-                    slowerScrollRate
-                    tag="figure"
+                  data={{
+                    'data-center-center': 'opacity: 1;',
+                    'data-bottom-top': 'opacity: 0;'
+                  }}
                 >
-                    <p className="landingInfoTitle">What we do</p>
-                </Parallax>    
-                
+                  <p className="landingInfoTitle">What we do</p>
+                </Parallax>
             </Grid>
             
             <Grid

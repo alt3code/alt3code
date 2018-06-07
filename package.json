@@ -14,6 +14,7 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "1.1.4",
     "react-scrollreveal": "^1.1.2",
+    "react-skrollr": "^1.0.4",
     "react-sticky": "^6.0.2",
     "react-swipeable-views": "^0.12.13",
     "react-syntax-highlighter": "^7.0.4",

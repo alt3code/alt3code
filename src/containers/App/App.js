@@ -7,7 +7,7 @@ import LandingHeader from 'LandingHeader/LandingHeader';
 import Navbar from 'Navbar/Navbar';
 import Footer from 'Footer/Footer';
 import 'utils/fonts.css';
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxProvider } from 'react-skrollr';
 // import Code from 'Code/Code';
 
 class App extends React.Component {
@@ -18,7 +18,7 @@ class App extends React.Component {
           <div className="App">
             <Navbar />
             <div className="main">
-              <Parallax strength={500}>
+              <Parallax strength={600}>
                 <LandingHeader />
                 <LandingInfo />
                 <Background className="custom-bg" />

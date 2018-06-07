@@ -1,57 +1,84 @@
 import React from 'react';
+import './Navbar.css';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import CodeImg from 'images/code.png';
-import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
+import Logo from 'images/code.png';
+import $ from 'jquery';
 // import NavSearchBar from 'NavSearchBar/NavSearchBar';
 
-const styles = {
-  root: {
-    flexGrow: 1,
-  },
-  toolbar: {
-    marginTop: '2px',
-  },
-  flex: {
-    flex: 1,
-  },
-  logo: {
-    height: 40,
-  },
-};
-
 class Navbar extends React.Component {
+
+  monitorScroll = () => {
+    var scrollTop = 0;
+    $(window).scroll(function(){
+      scrollTop = $(window).scrollTop(); 
+      // Weird footer bottom padding/margin issue - fix!
+      if (scrollTop >= 100) {
+        $('.navbar').addClass('scrolled-nav');
+      } else if (scrollTop < 100) {
+        $('.navbar').removeClass('scrolled-nav');
+      }
+    }); 
+  }
+
+  classToggle = () => {
+    const navs = document.querySelectorAll('.Navbar__Items')
+    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+  }
+
+  componentDidMount() {
+
+  }
+
   render() {
-    const { classes } = this.props;
     return (
-      <AppBar position="fixed" color="primary" className={classes.root}>
-        <Toolbar className={classes.toolbar}>
-          <Typography variant="title" color="inherit" className={classes.flex}>
-            <img src={CodeImg} className={classes.logo} alt="Logo"/>
-          </Typography>
-          {/*<NavSearchBar />*/}
-          <Button color="inherit" onClick={() => { console.log('Projects'); }}>Projects</Button>
-          <Button color="inherit" onClick={() => { console.log('Guides'); }}>Guides</Button>
-          <Button color="inherit" onClick={() => { console.log('Snippets'); }}>Snippets</Button>
-          <Button color="inherit" onClick={() => { console.log('Widgets'); }}>Widgets</Button>
-          <Button color="inherit" onClick={() => { console.log('About Us'); }}>About Us</Button>
-        </Toolbar>
-        
-      </AppBar>
+      <div className="Navbar">
+          <div className="Navbar__Link-brand">
+            <img src={Logo} className="logo" alt="Logo"/>
+          </div>
+          <div className="Navbar__Link-toggle">
+            <div className="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <nav className="Navbar__Items Navbar__Items--right">
+            <a href="https://www.google.com" className="Navbar__Link">Projects</a>
+            <a href="https://www.google.com" className="Navbar__Link">Guides</a>
+            <a href="https://www.google.com" className="Navbar__Link">Snippets</a>
+            <a href="https://www.google.com" className="Navbar__Link">About Us</a>
+          </nav>
+      </div>
     );
   }
 }
-
-Navbar.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(Navbar);
+{/*<NavSearchBar />*/}
+      {/*<div className="navbar">
+        <div className="left">
+          <img src={Logo} className="logo" alt="Logo"/>
+        </div>
+        <div className="right">
+          
+          <a href="#" className="navbarLink">Projects</a>
+          <a href="#" className="navbarLink">Guides</a>
+          <a href="#" className="navbarLink">Snippets</a>
+          <a href="#" className="navbarLink">Widgets</a>
+          <a href="#" className="navbarLink">About Us</a>
+        </div>
+      </div>*/}
+{/*<NavSearchBar />*/}
+      {/*<div className="navbar">
+        <div className="left">
+          <img src={Logo} className="logo" alt="Logo"/>
+        </div>
+        <div className="right">
+          
+          <a href="#" className="navbarLink">Projects</a>
+          <a href="#" className="navbarLink">Guides</a>
+          <a href="#" className="navbarLink">Snippets</a>
+          <a href="#" className="navbarLink">Widgets</a>
+          <a href="#" className="navbarLink">About Us</a>
+        </div>
+      </div>*/}
+export default Navbar;
