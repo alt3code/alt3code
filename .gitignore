@@ -65,3 +65,10 @@ typings/
 
 # Serverless directories
 .serverless
+
+# Mac
+.DS_Store
+src/.DS_Store
+
+# SASS Cache (no clue)
+.sass-cache/
