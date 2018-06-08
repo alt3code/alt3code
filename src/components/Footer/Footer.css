@@ -29,8 +29,8 @@
 	transition: all .2s;
 }
 .emailLink:hover {
-	padding: 20px 30px 20px 30px;
-	transform: scale(1.03);
+	padding: 20px;
+	transform: scale(1.02);
 }
 .no-flickr {
     -webkit-transform: translateZ(0);

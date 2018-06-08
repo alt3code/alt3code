@@ -1,0 +1,13 @@
+.guidesHeaderText {
+  font-size: 5em;
+  margin: 0;
+  padding-top: 125px;
+}
+@media (min-width: 568px) {
+	.guidesHeaderText {
+		font-size: 8em;
+	}
+}
+.guidesWrapper {
+  text-align: center;
+}

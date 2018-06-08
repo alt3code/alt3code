@@ -3,6 +3,7 @@ import './Navbar.css';
 import PropTypes from 'prop-types';
 import Logo from 'images/code.png';
 import $ from 'jquery';
+import { Link } from 'react-router-dom'
 // import NavSearchBar from 'NavSearchBar/NavSearchBar';
 
 class Navbar extends React.Component {
@@ -41,10 +42,10 @@ class Navbar extends React.Component {
             </div>
           </div>
           <nav className="Navbar__Items Navbar__Items--right">
-            <a href="https://www.google.com" className="Navbar__Link">Projects</a>
-            <a href="https://www.google.com" className="Navbar__Link">Guides</a>
-            <a href="https://www.google.com" className="Navbar__Link">Snippets</a>
-            <a href="https://www.google.com" className="Navbar__Link">About Us</a>
+            <li><Link to='/' className="Navbar__Link">Home</Link></li>
+            <li><Link to='/projects' className="Navbar__Link">Projects</Link></li>
+            <li><Link to='/guides' className="Navbar__Link">Guides</Link></li>
+            <li><Link to='/guides' className="Navbar__Link">About Us</Link></li>
           </nav>
       </div>
     );

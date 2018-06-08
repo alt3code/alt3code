@@ -4,9 +4,6 @@
   flex-direction: column;
   font-family: "Quicksand";
 }
-.main {
-	flex: 1;
-}
 .custom-bg {
 	/*NEW*/
 	width: 100vw;

@@ -1,0 +1,13 @@
+.projectsHeaderText {
+  font-size: 5em;
+  margin: 0;
+  padding-top: 125px;
+}
+@media (min-width: 568px) {
+	.projectsHeaderText {
+		font-size: 8em;
+	}
+}
+.projectsWrapper {
+  text-align: center;
+}
