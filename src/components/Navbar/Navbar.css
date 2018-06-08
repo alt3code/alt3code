@@ -65,16 +65,27 @@
   .Navbar {
     flex-direction: column;
   }
-.Navbar__Items {
-    display:none;
+
+  .Navbar__Items {
+      display: flex;
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height 500ms linear;
   }
-.Navbar__Items--right {
+
+  .Navbar__Items--right {
     margin: 0 auto;
     text-align: center;
   }
-.Navbar__ToggleShow {
-    display: flex;
+  .Navbar__ToggleShow {
+      display: flex;
+    }
+
+  .Navbar__Items.Navbar__ToggleShow {
+      max-height: 750px;
+      transition: max-height 500ms linear;
   }
+
   .Navbar__Link {
   	margin: 10px auto;
   }

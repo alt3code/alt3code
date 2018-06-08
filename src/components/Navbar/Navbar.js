@@ -21,12 +21,9 @@ class Navbar extends React.Component {
   }
 
   classToggle = () => {
-    const navs = document.querySelectorAll('.Navbar__Items')
+    document.querySelector('.hamburger').classList.toggle('open');
+    const navs = document.querySelectorAll('.Navbar__Items');
     navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-  }
-
-  componentDidMount() {
-
   }
 
   render() {
@@ -35,7 +32,7 @@ class Navbar extends React.Component {
           <div className="Navbar__Link-brand">
             <img src={Logo} className="logo" alt="Logo"/>
           </div>
-          <div className="Navbar__Link-toggle">
+          <div className="Navbar__Link-toggle" onClick={this.classToggle}>
             <div className="hamburger">
               <span></span>
               <span></span>
