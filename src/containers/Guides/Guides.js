@@ -5,7 +5,6 @@ import SubNavbar from 'SubNavbar/SubNavbar';
 const Guides = () => {
 	return (
 		<div className="guidesWrapper">
-			<SubNavbar />
 			<p className="guidesHeaderText">Guides</p>
 		</div>
 	);	

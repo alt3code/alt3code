@@ -7,7 +7,6 @@ import LandingHeader from 'LandingHeader/LandingHeader';
 const LandingHome = () => {
 	return (
 		<Parallax strength={600}>
-		  <Navbar />
 	      <LandingHeader />
 	      <LandingInfo />
 	      <Background className="custom-bg" />
